@@ -1,0 +1,33 @@
+{
+  "name": "mern_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install":"npm install --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albseb511/mern-test.git"
+  },
+  "author": "Albert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albseb511/express-test/issues"
+  },
+  "homepage": "https://github.com/albseb511/express-test#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
